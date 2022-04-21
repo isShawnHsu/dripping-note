@@ -77,6 +77,36 @@ docker run -itd --restart=always --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWOR
 3306:3306 外部端口:内部端口
 ```
 
+#### 3、远程登录（处理）
+
+从服务器拉取可用的包到本地：``` apt-get update```
+
+安装vim：```apt-get install vim```
+
+修改文件: ```vim etc/mysql/my.cnf```
+
+在配置文件中   [mysqld] 下面添加```skip-grant-tables```
+退出容器后重启mysql 容器:```docker restart mysql```
+
+```
+mysql> select Host,User,authentication_string from mysql.user
+    查询数据库用户
+ 
+    创建新用户，并赋予远程连接权限（%代表匹配所有host）
+mysql> CREATE USER 'root1'@'%' IDENTIFIED BY 'root1';
+mysql> GRANT ALL PRIVILEGES ON *.* TO 'root1'@'%' WITH GRANT OPTION;
+mysql> flush privileges;
+
+```
+
+#### 4、建表语句 带编码
+
+```sql
+CREATE DATABASE `wordpress` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
+
+
+
 ## 三、项目部署
 
 #### 1、Dockerfile
