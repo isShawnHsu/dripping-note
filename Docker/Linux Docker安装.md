@@ -73,7 +73,7 @@ docker pull mysql
 #### 2、启动镜像
 
 ```
-docker run -itd --restart=always --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
+docker run -itd --restart=always --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 3306:3306 外部端口:内部端口
 ```
 
