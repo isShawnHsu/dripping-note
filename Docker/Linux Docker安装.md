@@ -89,12 +89,8 @@ docker run -itd --restart=always --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWOR
 退出容器后重启mysql 容器:```docker restart mysql```
 
 ```
-mysql> select Host,User,authentication_string from mysql.user
-    查询数据库用户
- 
-    创建新用户，并赋予远程连接权限（%代表匹配所有host）
-mysql> CREATE USER 'root1'@'%' IDENTIFIED BY 'root1';
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'root1'@'%' WITH GRANT OPTION;
+mysql> use mysql; 
+mysql> update user set Host = '%' where User='root'; 
 mysql> flush privileges;
 
 ```
