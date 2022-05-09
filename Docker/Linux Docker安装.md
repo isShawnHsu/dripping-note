@@ -102,7 +102,7 @@ CREATE DATABASE `wordpress` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicod
 ```
 #### 5、 redis
 ```
-docker run --name hsu-redis  -p 6379:6379 -d redis redis-server --save 60 1 --loglevel warning 
+docker run -itd --name hsu-redis  -p 6379:6379  redis redis-server --save 60 1 --loglevel warning --requirepass zswdxmm@2Ok!
 ```
 
 
