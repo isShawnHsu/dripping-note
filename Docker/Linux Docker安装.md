@@ -100,7 +100,10 @@ mysql> flush privileges;
 ```sql
 CREATE DATABASE `wordpress` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
-
+#### 5、 redis
+```
+docker run --name hsu-redis  -p 6379:6379 -d redis redis-server --save 60 1 --loglevel warning 
+```
 
 
 ## 三、项目部署
