@@ -22,7 +22,7 @@
 
 ##### 5、执行配置（添加https模块）
 
-`./configure --with-http_ssl_module` 
+`./configure --with-http_ssl_module --with-http_v2_module` 
 
 ```
 -prefix=PATH：指定 nginx 的安装目录
@@ -38,8 +38,7 @@
 
 ##### 6、编译安装(默认安装在/usr/local/nginx)
 
-`make`
-`make install`
+`make && make install`
 
 ##### 7、启动与重启
 
