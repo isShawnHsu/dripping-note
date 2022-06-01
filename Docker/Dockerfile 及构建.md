@@ -21,6 +21,14 @@ MAINTAINER shawn
 
 ```docker build -t wxa:v1 ./```
 
+或
+
+```
+docker build -f Dockerfile -t wxa:v1 ./
+```
+
+
+
 #### 4、运行容器
 
 ```docker run  -it -d  -p 5555:5556 wxa:v1```
