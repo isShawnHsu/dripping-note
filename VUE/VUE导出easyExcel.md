@@ -1,5 +1,4 @@
-# VUE导出easyExcel
-
+- VUE导出easyExcel
 ```js
 function exportExl() {
        const token_ = localStorage.getItem('authorization')
@@ -26,4 +25,25 @@ function exportExl() {
       }
     }
 ```
+
+- js 直接将返回值输出成文件并下载
+```js
+//创建一个<a>标签
+let ele_a = document.createElement("a");
+//文件名
+let fileName = 'ES23044.txt';
+//h5特性
+ele_a.download = fileName;
+ele_a.style.display="none";
+let blob = new Blob(["文本信息"]);
+ele_a.href = URL.createObjectURL(blob);
+document.body.appendChild(ele_a);
+ele_a.click();
+document.body.removeChild(ele_a);
+```
+
+
+
+
+
 
