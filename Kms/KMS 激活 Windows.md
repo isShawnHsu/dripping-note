@@ -18,7 +18,7 @@ cd C:\Program Files\Microsoft Office\Office16      #进入Offiice目录
 cscript ospp.vbs /inpkey:YC7DK-G2NP3-2QQC3-J6H88-GVGXT    #安装GVLkey(不同版本Officekey见附录)，如果是VL批量版本并没有手动安装过任何KEY可略过此步；
 cscript ospp.vbs /sethst:47.242.62.251     #设置kms服务器，sethst:后面没有空格
 cscript ospp.vbs /act      #手动激活
-cscrpit ospp.vbs /dstatus #查看激活情况
+cscript ospp.vbs /dstatus #查看激活情况
 ```
 
 
