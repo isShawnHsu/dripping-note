@@ -1,6 +1,7 @@
 
 ```http
 https://learn.microsoft.com/zh-cn/windows-server/get-started/kms-client-activation-keys
+https://msdn.itellyou.cn/
 ```
 KMS 激活 Windows
 
