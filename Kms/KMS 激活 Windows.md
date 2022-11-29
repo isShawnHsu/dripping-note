@@ -1,5 +1,7 @@
 
-
+```http
+https://learn.microsoft.com/zh-cn/windows-server/get-started/kms-client-activation-keys
+```
 KMS 激活 Windows
 
 ```shell
