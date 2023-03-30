@@ -1,7 +1,9 @@
 ---
 html:
     toc: true
+    embed_local_images: true
 ---
+
 
 # Markdown语法
 ##  一、标题
