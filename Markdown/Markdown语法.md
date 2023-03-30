@@ -77,7 +77,7 @@ html:
 `&nbsp;`
 
 ## 九、时序图
-- ```mermaid
+- mermaid
 - sequenceDiagram
 - 实线：用户->>商户: 发起请求
 - 虚线：支付宝-->>用户: 发送短信
