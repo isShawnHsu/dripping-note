@@ -104,12 +104,12 @@ http {
     server {
         listen 80;
         listen 443 ssl;
-        server_name  plex.yongx.fun;
+        server_name  xx.yongx.fun;
 
         charset utf-8;
 
-        ssl_certificate      /home/ssl/plex.yongx.fun_nginx/5086212_plex.yongx.fun.pem;
-        ssl_certificate_key  /home/ssl/plex.yongx.fun_nginx/5086212_plex.yongx.fun.key;
+        ssl_certificate      /home/ssl/xx.yongx.fun_nginx/5086212_plex.yongx.fun.pem;
+        ssl_certificate_key  /home/ssl/xx.yongx.fun_nginx/5086212_plex.yongx.fun.key;
 
         ssl_session_timeout 5m;
         ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
@@ -121,7 +121,7 @@ http {
             if ( $scheme = http ) {
                 return 301 https://$host$request_uri;
             }
-            proxy_pass   http://plex;
+            proxy_pass   http://xl;
             proxy_set_header Host $http_host;
             proxy_set_header X-Real-IP $remote_addr;
             proxy_set_header X-Fonwarded-For $proxy_add_x_forwarded_for;
