@@ -32,9 +32,9 @@ vi frps.ini
 bind_port = 7000
 vhost_http_port = 80
 dashboard_port = 7500
-dashboard_user = shawn
-dashboard_pwd = dxhsf21l
-token = freefrp
+dashboard_user = xxx
+dashboard_pwd = xxxxx
+token = xxx
 max_pool_count = 10
 log_file = ./frps.log
 log_level = info
@@ -51,40 +51,40 @@ nohup ./frps -c frps.ini >/dev/null 2>&1 &
 
 ```
 [common]
-server_addr = 149.129.116.139
-server_port = 7000
-token = freefrp
-user = shawn
+server_addr = xxxx
+server_port = xxxx
+token = xxxx
+user = xxx
 
 [web]
 type = tcp
 local_ip = 192.168.2.1
-local_port = 80
-remote_port = 7800
+local_port = xxxx
+remote_port = xxxx
 use_encryption = true
 use_compression = true
 
 [aria]
 type = tcp
 local_ip = 192.168.2.1
-local_port = 6800
-remote_port = 6800
+local_port = xxxx
+remote_port = xxxx
 use_encryption = true
 use_compression = true
 
 [transmission]
 type = tcp
 local_ip = 192.168.2.1
-local_port = 9091
-remote_port = 7802
+local_port = xxxx
+remote_port = xxxx
 use_encryption = true
 use_compression = true
 
 [cloud]
 type = tcp
 local_ip = 192.168.2.1
-local_port = 9981
-remote_port = 7801
+local_port = xxxx
+remote_port = xxxx
 use_encryption = true
 use_compression = true
 ```
