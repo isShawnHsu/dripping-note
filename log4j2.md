@@ -88,7 +88,7 @@
             <AppenderRef ref="console"/>
         </Root>
  
-        <!--将logger中的 additivity 属性配置为 false，则这个logger不会将日志流反馈到root中。就是日志只会存在一个文件中，不会出现多个文件存在相同日志-->
+        <!--将logger中的 additivity 属性配置为 false，则这个logger不会将日志流反馈到root中,默认为true。就是日志只会存在一个文件中，不会出现多个文件存在相同日志-->
         <Logger name="dayunLogger" additivity="true" level="INFO">
             <!--<appender-ref ref="sendCodeFile" level="INFO" />-->
             <appender-ref ref="dayunLog" level="INFO" />
